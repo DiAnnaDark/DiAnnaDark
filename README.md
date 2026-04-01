@@ -13,7 +13,7 @@ Writing systems by day — writing poetry by night.
 Java Backend Developer — Skillbox (2026)
 
 <p align="center">
-  <img width="400" src="https://github.com/user-attachments/assets/548956d4-9cee-4f09-a3f9-fbc36d4453e8" />
+  <img width="200" src="https://github.com/user-attachments/assets/548956d4-9cee-4f09-a3f9-fbc36d4453e8" />
 </p>
 
 ## Tech Stack
