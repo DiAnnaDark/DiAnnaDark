@@ -8,7 +8,7 @@ Tech focus: clean architecture, data consistency, and production-ready code.
 
 Writing systems by day — writing poetry by night.
 
-## 📜 Certification
+## Certification
 
 Java Backend Developer — Skillbox (2026)
 
@@ -16,7 +16,7 @@ Java Backend Developer — Skillbox (2026)
   <img width="400" src="https://github.com/user-attachments/assets/548956d4-9cee-4f09-a3f9-fbc36d4453e8" />
 </p>
 
-## 🛠 Tech Stack
+## Tech Stack
 
 Java, Kotlin  
 Spring Boot, Spring MVC, Spring Data JPA, Spring Security  
