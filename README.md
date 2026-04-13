@@ -12,17 +12,22 @@ Writing systems by day — writing poetry by night.
 
 Java Backend Developer — Skillbox (2026)
 
+## Certifications
+
 <p align="center">
-  <img width="200" src="https://github.com/user-attachments/assets/548956d4-9cee-4f09-a3f9-fbc36d4453e8" />
+  <img width="45%" src="https://github.com/user-attachments/assets/548956d4-9cee-4f09-a3f9-fbc36d4453e8" />
+  <img width="45%" src="https://github.com/user-attachments/assets/b2c21461-10bd-49f4-a5dc-f58255e02219" />
 </p>
 
 ## Tech Stack
 
-Java, Kotlin  
-Spring Boot, Spring MVC, Spring Data JPA, Spring Security  
-PostgreSQL, Hibernate, Liquibase, Flyway  
-Docker  
-JUnit 5, Mockito, Testcontainers  
-Maven, Gradle  
-REST API, Swagger
+## Tech Stack
+
+**Languages:** Java 17+, Kotlin  
+**Frameworks:** Spring Boot (MVC, Data JPA, Security, Scheduler)  
+**Database & Migrations:** PostgreSQL, Hibernate, Liquibase, Flyway  
+**Testing:** JUnit 5, Mockito, Testcontainers  
+**DevOps & Tools:** Docker, Maven, Gradle, Git  
+**API:** REST API, Swagger/OpenAPI, JSON, XML, Lombok
+
 
