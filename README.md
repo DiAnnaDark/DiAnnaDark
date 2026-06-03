@@ -5,13 +5,6 @@ Building microservices, REST APIs and mobile applications with Spring Boot, Kafk
 
 Writing systems by day — writing poetry by night.
 
-## Certifications
-
-<p align="center">
-  <img width="45%" src="https://github.com/user-attachments/assets/548956d4-9cee-4f09-a3f9-fbc36d4453e8" />
-  &nbsp;
-  <img width="45%" src="https://github.com/user-attachments/assets/b2c21461-10bd-49f4-a5dc-f58255e02219" />
-</p>
 
 ## Tech Stack
 
@@ -56,6 +49,15 @@ RecyclerView,
 Room,
 Coroutines,
 XML Layouts
+
+
+## Certifications
+
+<p align="center">
+  <img width="30%" src="https://github.com/user-attachments/assets/548956d4-9cee-4f09-a3f9-fbc36d4453e8" />
+  &nbsp;&nbsp;
+  <img width="30%" src="https://github.com/user-attachments/assets/b2c21461-10bd-49f4-a5dc-f58255e02219" />
+</p>
 
 
 
