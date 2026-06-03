@@ -1,10 +1,7 @@
 # Dianna Sotnikova
-Backend Developer (Java/Kotlin) × Dark Romantic Poet
+Java Backend / Android Developer × Dark Romantic Poet
 
-I build structured backend systems: REST APIs, database-driven applications, 
-and scalable services using Spring Boot.
-
-Tech focus: clean architecture, data consistency, and production-ready code.
+Building microservices, REST APIs and mobile applications with Spring Boot, Kafka, PostgreSQL, Docker and Kotlin. Focused on clean architecture, testing and maintainable code.
 
 Writing systems by day — writing poetry by night.
 
@@ -18,12 +15,47 @@ Writing systems by day — writing poetry by night.
 
 ## Tech Stack
 
-**Languages:** Java 17+, Kotlin  
-**Frameworks:** Spring Boot (MVC, Data JPA, Security, Scheduler)  
-**Database & Migrations:** PostgreSQL, Hibernate, Liquibase, Flyway  
-**Testing:** JUnit 5, Mockito, Testcontainers  
-**DevOps & Tools:** Docker, Maven, Gradle, Git  
-**API:** REST API, Swagger/OpenAPI, JSON, XML, Lombok
+Languages:
+Java 17/21, Kotlin
+
+Backend:
+Spring Boot,
+Spring MVC,
+Spring Data JPA,
+Spring Security,
+OpenFeign
+
+Microservices:
+Kafka,
+Eureka,
+REST API
+
+Database:
+PostgreSQL,
+Hibernate,
+Liquibase,
+Flyway
+
+Testing:
+JUnit 5,
+Mockito,
+MockMvc,
+Testcontainers
+
+DevOps:
+Docker,
+Prometheus,
+Grafana,
+Git,
+Maven,
+Gradle
+
+Android:
+Android SDK,
+RecyclerView,
+Room,
+Coroutines,
+XML Layouts
 
 
 
