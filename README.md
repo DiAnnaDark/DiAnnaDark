@@ -38,7 +38,7 @@ Docker, Docker Compose,
 Prometheus, Grafana,
 Git, Maven, Gradle
 
-## Certifications
+
 <h2> Certifications</h2>
 
 <table>
