@@ -1,63 +1,63 @@
 # Dianna Sotnikova
-Java Backend / Android Developer × Dark Romantic Poet
+Java Backend • Android (Kotlin) • Python • Testing
 
-Building microservices, REST APIs and mobile applications with Spring Boot, Kafka, PostgreSQL, Docker and Kotlin. Focused on clean architecture, testing and maintainable code.
-
+Building backend services, microservices, REST APIs and Android applications.
+Experience with Java 17/21, Spring Boot, PostgreSQL, Kafka, Docker, Kotlin and Python.
+Interested in backend development, mobile applications, test automation and software quality.
+Focused on clean architecture, maintainable code and continuous learning.
 Writing systems by day — writing poetry by night.
 
 
 ## Tech Stack
 
 Languages:
-Java 17/21, Kotlin
+Java 17/21, Kotlin, Python, SQL
 
 Backend:
-Spring Boot,
-Spring MVC,
-Spring Data JPA,
-Spring Security,
-OpenFeign
+Spring Boot, Spring MVC, Spring Data JPA,
+Spring Security, OpenFeign, Hibernate
 
 Microservices:
-Kafka,
-Eureka,
-REST API
-
-Database:
-PostgreSQL,
-Hibernate,
-Liquibase,
-Flyway
-
-Testing:
-JUnit 5,
-Mockito,
-MockMvc,
-Testcontainers
-
-DevOps:
-Docker,
-Prometheus,
-Grafana,
-Git,
-Maven,
-Gradle
+Kafka, Eureka, REST API
 
 Android:
-Android SDK,
-RecyclerView,
-Room,
-Coroutines,
-XML Layouts
+Kotlin, Android SDK, RecyclerView,
+Room, Coroutines, Navigation Component,
+MVVM, XML Layouts
 
+Testing:
+JUnit 5, Mockito, MockMvc,
+Testcontainers, API Testing
+
+Database:
+PostgreSQL, Hibernate,
+Liquibase, Flyway
+
+DevOps:
+Docker, Docker Compose,
+Prometheus, Grafana,
+Git, Maven, Gradle
 
 ## Certifications
 
-<p align="center">
-  <img width="30%" src="https://github.com/user-attachments/assets/548956d4-9cee-4f09-a3f9-fbc36d4453e8" />
-  &nbsp;&nbsp;
-  <img width="30%" src="https://github.com/user-attachments/assets/b2c21461-10bd-49f4-a5dc-f58255e02219" />
-</p>
+<table align="center">
+<tr>
+<td align="center">
+<img width="220" src="СЕРТИФИКАТ_1"><br>
+<b>Java Web Development</b>
+</td>
+
+<td align="center">
+<img width="220" src="СЕРТИФИКАТ_2"><br>
+<b>Java Practice</b>
+</td>
+
+<td align="center">
+<img width="220" src="СЕРТИФИКАТ_3"><br>
+<b>Team Project</b>
+</td>
+</tr>
+</table>
 
 
 
