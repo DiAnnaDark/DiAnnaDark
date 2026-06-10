@@ -39,25 +39,27 @@ Prometheus, Grafana,
 Git, Maven, Gradle
 
 ## Certifications
+<h2> Certifications</h2>
 
-<table align="center">
+<table>
 <tr>
 <td align="center">
-<img width="220" src="СЕРТИФИКАТ_1"><br>
-<b>Java Web Development</b>
+<img width="220" src="https://github.com/user-attachments/assets/bd1145df-ab54-4380-847f-f17e0c83795e"><br>
+<b>Java Web Development</b><br>
+Skillbox
 </td>
 
 <td align="center">
-<img width="220" src="СЕРТИФИКАТ_2"><br>
-<b>Java Practice</b>
+<img width="220" src="https://github.com/user-attachments/assets/de9ee189-15f2-4a27-ac97-9e10cdebfbef"><br>
+<b>Java Practice</b><br>
+Skillbox
 </td>
 
 <td align="center">
-<img width="220" src="СЕРТИФИКАТ_3"><br>
-<b>Team Project</b>
+<img width="220" src="https://github.com/user-attachments/assets/15b2c7a5-20f0-4f38-a780-fc63ee171f18"><br>
+<b>Team Project</b><br>
+Skillbox
 </td>
 </tr>
 </table>
-
-
 
