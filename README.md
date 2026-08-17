@@ -1,45 +1,38 @@
 # Dianna Sotnikova
-Java Backend • Android (Kotlin) • Python • Testing
 
-Building backend services, microservices, REST APIs and Android applications.
-Experience with Java 17/21, Spring Boot, PostgreSQL, Kafka, Docker, Kotlin and Python.
-Interested in backend development, mobile applications, test automation and software quality.
-Focused on clean architecture, maintainable code and continuous learning.
-Writing systems by day — writing poetry by night.
+**Backend Developer · Java · Python · System Design**
 
+Building backend systems, automation platforms and API integrations with a focus on clean architecture, reliability and maintainability.
+
+My current work includes designing and developing a modular publication automation platform with complex domain workflows, moderation, scheduling, background processing, external API integrations and media processing.
 
 ## Tech Stack
 
-Languages:
-Java 17/21, Kotlin, Python, SQL
+**Languages:** Java 17/21, Python 3.12, Kotlin, SQL
 
-Backend:
-Spring Boot, Spring MVC, Spring Data JPA,
-Spring Security, OpenFeign, Hibernate
+**Backend:** Spring Boot, Spring MVC, Spring Data JPA, FastAPI, Uvicorn, REST API
 
-Microservices:
-Kafka, Eureka, REST API
+**Architecture:** Clean Architecture, Layered Architecture, Domain Modeling, Repository Pattern, Dependency Injection, modular application design
 
-Android:
-Kotlin, Android SDK, RecyclerView,
-Room, Coroutines, Navigation Component,
-MVVM, XML Layouts
+**Integrations & Automation:** VK API, HTTP APIs, event-driven workflows, background workers, scheduling, media processing
 
-Testing:
-JUnit 5, Mockito, MockMvc,
-Testcontainers, API Testing
+**Data:** PostgreSQL, SQLite, Hibernate, Liquibase, Flyway
 
-Database:
-PostgreSQL, Hibernate,
-Liquibase, Flyway
+**Testing:** JUnit 5, Mockito, MockMvc, pytest, httpx, Testcontainers, API Testing
 
-DevOps:
-Docker, Docker Compose,
-Prometheus, Grafana,
-Git, Maven, Gradle
+**Infrastructure:** Docker, Docker Compose, Linux, Git, Maven, Gradle, ffmpeg
 
+**Additional:** Kafka, OpenFeign, Spring Security, Prometheus, Grafana
 
-<h2> Certifications</h2>
+## Current Focus
+
+Designing reliable backend systems with clear domain boundaries, predictable state transitions and resilience to external-system failures.
+
+Working across Java and Python ecosystems — from Spring-based services to asynchronous automation and integration-heavy backend applications.
+
+Writing systems by day — poetry by night.
+
+<h2>Certifications</h2>
 
 <table>
 <tr>
@@ -62,4 +55,3 @@ Skillbox
 </td>
 </tr>
 </table>
-
