@@ -15,22 +15,28 @@ The project is designed around explicit domain boundaries rather than transport-
 
 ## Architecture
 
-The codebase is separated into several major layers:
+```mermaid
+flowchart TD
+    U[Users / Admins] --> P[Presentation & Web]
+    P --> A[Application Layer]
+    A --> D[Domain]
+    A --> S[Application Services & Workers]
+    S --> D
+    A --> I[Infrastructure Adapters]
+    S --> I
+    I --> DB[(SQLite)]
+    I --> VK[VK API]
+    I --> M[Media / ffmpeg]
+    A --> R[Scheduling & Reconciliation]
+    R --> I
 
-```text
-Presentation / Web
-       │
-       ▼
-Application
-       │
-       ▼
-Domain
-       ▲
-       │
-Infrastructure
+    D:::core
+    A:::core
 
-Services and composition modules coordinate runtime workflows and dependencies.
+    classDef core stroke-width:2px;
 ```
+
+The dependency direction keeps domain decisions independent from VK, HTTP transport and persistence details.
 
 ### Domain
 
