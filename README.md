@@ -8,15 +8,16 @@ My current work includes designing and developing a modular publication automati
 
 ## Featured Project — Orion
 
-**Private backend platform · Architecture case study available publicly**
+**Production backend platform · Architecture case study available publicly**
 
-Orion is my current flagship backend project: a modular automation platform built around explicit domain boundaries, complex lifecycle workflows, scheduling, background workers, external-system reconciliation, media processing and failure-aware integrations.
+Orion is my flagship backend project: a modular automation platform built around explicit domain boundaries, complex lifecycle workflows, scheduling, background workers, external-system reconciliation, media processing and failure-aware integrations.
 
 **Stack:** Python 3.12 · FastAPI · Uvicorn · SQLite · Docker · VK API · pytest · httpx · ffmpeg
 
-The production repository remains private, but I maintain a public architecture case study describing the engineering decisions without exposing source code, credentials, production data or proprietary business rules.
+The production repository remains private because it contains customer-specific integrations, operational details and production environment information. Instead, I maintain a public architecture case study describing the engineering decisions, system design and reliability approaches without exposing source code, credentials, production data or proprietary business rules.
 
-[Read the Orion Architecture Case Study →](./ORION_CASE_STUDY.md)
+- [Read the Orion Architecture Case Study →](./ORION_CASE_STUDY.md)
+- [Orion Monitor — public read-only production monitoring tool →](https://github.com/DiAnnaDark/Orion_Monitor_Public)
 
 ## Tech Stack
 
