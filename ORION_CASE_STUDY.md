@@ -24,85 +24,93 @@ flowchart TD
     S --> D
     A --> I[Infrastructure Adapters]
     S --> I
-    I --> DB[(SQLite)]
-    I --> VK[VK API]
-    I --> M[Media / ffmpeg]
+    I --> DB[(Persistence)]
+    I --> VK[External APIs]
+    I --> M[Media Processing]
     A --> R[Scheduling & Reconciliation]
     R --> I
-
-    D:::core
-    A:::core
-
-    classDef core stroke-width:2px;
 ```
 
-The dependency direction keeps domain decisions independent from VK, HTTP transport and persistence details.
+The dependency direction keeps domain decisions independent from external APIs, transport and persistence details.
 
-### Domain
+## Engineering Principles
 
-Contains domain models, states and business concepts independent from external APIs.
+### Domain boundaries over transport handlers
 
-### Application
+Core decisions are kept inside application/domain layers rather than being embedded in API handlers or integrations.
 
-Contains use cases, policies, workflow orchestration and contracts between the business layer and infrastructure.
+### Explicit workflows and state transitions
 
-### Infrastructure
+Long-lived operations are represented through explicit lifecycle states. This makes behaviour observable, testable and recoverable after interruptions.
 
-Implements persistence and communication with external systems.
+### External state reconciliation
 
-### Presentation / Web
-
-Handles incoming interactions and HTTP-facing functionality without owning core business rules.
-
-### Composition
-
-Application composition modules assemble concrete implementations and keep dependency wiring outside domain logic.
+External platforms may change independently from Orion. The system treats external state as something that must be observed and reconciled rather than blindly assumed to match internal state.
 
 ## Engineering Challenges
 
 ### Reliable publication scheduling
 
-Publication is not treated as a simple delayed task. The system has to coordinate content with different eligibility constraints and priorities while remaining correct when the external platform changes independently of the application.
+Publication is not treated as a simple delayed task. Scheduling combines eligibility rules, priorities and persisted state while accounting for external platform changes.
 
-The scheduling model therefore separates business eligibility from publication execution and treats persisted application state and external state as potentially divergent.
+The design separates planning from execution so that decisions remain testable and observable.
 
-### External-system reconciliation
+### Failure-aware integrations
 
-External systems can be modified outside Orion. Scheduled content may disappear, change state or be published independently.
-
-The architecture is designed so that external state can be reconciled with internal state instead of assuming that every transition originated inside the application.
-
-### Predictable state transitions
-
-Long-lived content moves through multiple stages before and after publication. Explicit state transitions make those workflows observable and prevent transport handlers from silently becoming the source of business logic.
-
-### Background processing
-
-Long-running and deferred operations are isolated from interactive request handling. Background workers coordinate tasks such as publication-related processing and award delivery while application services retain the business decisions.
+External APIs can fail, return unexpected states or complete actions outside the application's own process. Integration boundaries are designed around validation, reconciliation and safe retries.
 
 ### Idempotent workflows
 
-Operations that may be retried are designed around stable state and explicit eligibility checks. The goal is to make retries safe and reduce the risk of duplicate side effects when workers restart or external calls fail.
+Operations that may be repeated are protected by explicit state checks and stable identities. The goal is to make retries safe after worker restarts or partial failures.
 
-### Media processing
+### Background processing
 
-The platform handles media-oriented workflows in addition to textual content. Media processing is kept behind application/infrastructure boundaries and the runtime image includes ffmpeg for media operations.
+Deferred and long-running operations are isolated from interactive flows. Workers perform processing while application services retain business decisions.
 
-### Maintainability
+### Media workflows
 
-The system favors small domain-specific modules over a single large service layer. Features such as publication, content lifecycle and award workflows are represented by dedicated application modules with their own models, policies, contracts, services and workers where appropriate.
+The platform supports media-oriented content flows. Media processing is isolated behind application/infrastructure boundaries and uses ffmpeg where required.
+
+## Reliability & Recovery
+
+Production systems need predictable behaviour not only during successful execution, but also during interruptions.
+
+The architecture includes patterns for:
+
+- recovering worker processes after restart;
+- validating persisted state before continuing workflows;
+- separating external reconciliation from internal decisions;
+- avoiding duplicate side effects during retries;
+- keeping operational monitoring separate from business logic.
+
+## Observability & Operations
+
+A separate read-only monitoring service is maintained for operational visibility.
+
+The monitoring layer follows an **observer, not controller** principle:
+
+- reads service and health state;
+- observes logs and failures;
+- reports operational information;
+- does not mutate application data or control production workflows.
 
 ## Testing Strategy
 
 The project uses pytest for automated testing and httpx for HTTP-oriented tests.
 
-The architecture also makes business policies testable independently from external VK communication by keeping domain/application behavior behind explicit boundaries.
+Testing focuses on:
+
+- business policies independent from external APIs;
+- lifecycle and state transition correctness;
+- retry-safe behaviour;
+- integration boundaries;
+- regression protection for complex workflows.
 
 ## Deployment
 
-Orion is packaged as a Docker container based on Python 3.12 slim.
+Orion is packaged as a Docker-based Python service.
 
-The production image installs only runtime dependencies, includes ffmpeg for media processing and runs the application as a dedicated non-root user.
+The production image uses Python 3.12, runtime dependencies only, ffmpeg for media operations and a dedicated application runtime configuration.
 
 ## What This Project Demonstrates
 
@@ -115,8 +123,17 @@ The production image installs only runtime dependencies, includes ffmpeg for med
 - Retry-safe and idempotency-oriented workflow design
 - Dockerized Python services
 - Automated backend testing
-- Maintaining a growing modular codebase
+- Operational thinking after deployment
 
 ## Confidentiality
 
-The complete Orion repository remains private. This case study intentionally describes architectural decisions at a high level and excludes credentials, production data, proprietary business rules, internal identifiers and production source code.
+The complete Orion repository remains private.
+
+This case study intentionally describes architectural decisions at a high level and excludes:
+
+- credentials and secrets;
+- production data;
+- customer-specific business rules;
+- internal identifiers;
+- infrastructure details;
+- production source code.
