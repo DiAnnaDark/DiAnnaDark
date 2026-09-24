@@ -19,6 +19,18 @@ The production repository remains private because it contains customer-specific 
 - [Read the Orion Architecture Case Study →](./ORION_CASE_STUDY.md)
 - [Orion Monitor — public read-only production monitoring tool →](https://github.com/DiAnnaDark/Orion_Monitor_Public)
 
+## Product in Development — SamoGo
+
+**Independent commercial product · Public showcase available**
+
+SamoGo is a VK community automation platform currently in development. Its product goal is to make user-generated content management, publishing, scheduling and conversational automation approachable for non-technical users by keeping technical complexity inside the platform.
+
+The complete product and unreleased workflows remain private. A small public showcase contains a real backend authentication subsystem and tests so the implementation style can be reviewed without exposing product-defining commercial logic.
+
+**Public sample:** Python 3.12 · SQLite · authentication lifecycle · automated tests
+
+- [SamoGo — public development showcase →](https://github.com/DiAnnaDark/SamoGo_Public)
+
 ## Tech Stack
 
 **Languages:** Java 17/21, Python 3.12, Kotlin, SQL
